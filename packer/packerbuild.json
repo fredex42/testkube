@@ -3,8 +3,8 @@
     {
       "type": "virtualbox-iso",
       "guest_os_type": "RedHat_64",
-      "iso_url": "http://mirror.bytemark.co.uk/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1804.iso",
-      "iso_checksum": "714acc0aefb32b7d51b515e25546835e55a90da9fb00417fbee2d03a62801efd",
+      "iso_url": "http://mirror.bytemark.co.uk/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1907.iso",
+      "iso_checksum": "9a2c47d97b9975452f7d582264e9fc16d108ed8252ac6816239a3b58cef5c53",
       "iso_checksum_type": "sha256",
       "disk_size": 8000,
       "http_directory": ".",
@@ -56,7 +56,7 @@
       "inline": [
 	"sudo yum install -y yum-utils device-mapper-persistent-data-lvm2 epel-release",
 	"sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo",
-	"sudo yum -y install docker-ce htop",
+	"sudo yum -y install docker-ce htop vim",
 	"sudo systemctl enable docker && sudo systemctl start docker"
       ]
     },
